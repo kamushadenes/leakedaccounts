@@ -53,6 +53,7 @@ class LeakedAccounts(object):
         if self.syslog:
             for l in log:
                 self.cefsender.send_log(l)
+                print(l)
 
 
 
